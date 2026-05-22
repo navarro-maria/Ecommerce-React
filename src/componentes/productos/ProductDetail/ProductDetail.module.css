@@ -1,0 +1,38 @@
+.contenedor{
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    background-color: #FFFFFF;
+    border-radius: 1rem;
+}
+
+.detalle{
+    display: flex;
+    gap: 1rem;
+}
+
+.imagen{
+    width: 20rem;
+}
+
+.info{
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+}
+
+.descripcion{
+    text-align: left;
+}
+
+.stock{
+    color: #757575;
+}
+
+.precio{
+    color: #E53935;
+    font-size: 1.5rem;
+    font-weight: bold;
+}

@@ -1,0 +1,19 @@
+.cantidad{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.btnCant{
+    padding: 0.2rem 0.5rem;
+    background-color: #F8361B;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.numCant{
+    font-size: 1.2rem;
+    font-weight: bold;
+}

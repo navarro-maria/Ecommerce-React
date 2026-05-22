@@ -1,0 +1,62 @@
+.contenedor{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    background-color: #FFFFFF;
+    padding: 16px;
+    border-radius: 16px;
+    width: 16rem;
+}
+
+.imagenCard{
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.info{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: .5rem;
+    padding-top: 1.5rem;
+}
+
+.stock{
+    font-size: 0.8rem;
+    color: #757575;
+}
+
+.precio{
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #F8361B;
+}
+
+.link{
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Boton */
+
+.boton{
+    background-color: #F8361B;
+    border: none;
+    border-radius: 1rem;
+    padding: 1rem 2rem;
+    color: #ffffff;
+}
+
+.boton:hover{
+    background-color: #D62E16;
+    cursor: pointer;
+}
+
+.favorito{
+    font-size: 1.5rem;
+    cursor: pointer;
+}

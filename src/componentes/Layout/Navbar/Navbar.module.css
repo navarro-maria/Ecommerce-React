@@ -1,0 +1,17 @@
+.links {
+    display: flex;
+    gap: 20px;
+}
+
+.links li {
+    list-style: none;
+}
+
+.links a{
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.links a:hover{
+    text-decoration: underline;
+}

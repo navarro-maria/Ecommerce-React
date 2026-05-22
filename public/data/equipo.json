@@ -1,0 +1,30 @@
+[
+  {
+    "id": 1,
+    "nombre": "Juan Pérez",
+    "puesto": "Director General",
+    "email": "juan.perez@empresa.com",
+    "foto": "/images/Avatar1.webp"
+  },
+  {
+    "id": 2,
+    "nombre": "María Gómez",
+    "puesto": "Gerente de Marketing",
+    "email": "maria.gomez@empresa.com",
+    "foto": "/images/Avatar2.webp"
+  },
+  {
+    "id": 3,
+    "nombre": "Carlos Rodríguez",
+    "puesto": "Jefe de Ventas",
+    "email": "carlos.rodriguez@empresa.com",
+    "foto": "/images/Avatar1.webp"
+  },
+  {
+    "id": 4,
+    "nombre": "Laura Martínez",
+    "puesto": "Directora de Recursos Humanos",
+    "email": "laura.martinez@empresa.com",
+    "foto": "/images/Avatar2.webp"
+  }
+]

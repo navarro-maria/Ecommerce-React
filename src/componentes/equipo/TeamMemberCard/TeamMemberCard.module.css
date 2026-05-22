@@ -1,0 +1,18 @@
+.contenedor{
+    width: 24rem;
+    padding: 1rem;
+    display: flex;
+    gap: 1rem;
+}
+
+.datos{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.3rem;
+}
+
+.imagen{
+    width: 5rem;
+    border-radius: 50%;
+}

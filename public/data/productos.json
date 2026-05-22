@@ -1,0 +1,34 @@
+[
+    {
+        "id": 1,
+        "nombre": "Camara instantánea",
+        "precio": 100000,
+        "stock": 10,
+        "imagen": "/images/CamaraInstantanea.png",
+        "descripcion": "Cámara instantánea de alta calidad con diseño retro. Captura momentos especiales al instante y disfruta de tus fotos al momento. Perfecta para eventos, viajes y momentos espontáneos."
+    },
+    {
+        "id": 2,
+        "nombre": "Camara nikon",
+        "precio": 150000,
+        "stock": 5,
+        "imagen": "/images/CamaraNikon.webp",
+        "descripcion": "Cámara Nikon de última generación con tecnología avanzada. Captura imágenes nítidas y detalladas con su sensor de alta resolución. Ideal para fotógrafos profesionales y entusiastas que buscan calidad y rendimiento excepcionales."
+    },
+    {
+        "id": 3,
+        "nombre": "Monitor asus",
+        "precio": 200000,
+        "stock": 3,
+        "imagen": "/images/MonitorAsus.jpg",
+        "descripcion": "Monitor ASUS de alta calidad con pantalla IPS y resolución Full HD. Ideal para gaming y productividad, ofrece colores vibrantes y un ángulo de visión amplio."
+    },
+    {
+        "id": 4,
+        "nombre": "Monitor curvo",
+        "precio": 250000,
+        "stock": 7,
+        "imagen": "/images/MonitorCurvo.jpg",
+        "descripcion": "Monitor curvo de alta calidad con pantalla curva y resolución Ultra HD. Proporciona una experiencia de visualización inmersiva y envolvente para gaming y entretenimiento."
+    }  
+]
