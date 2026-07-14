@@ -1,10 +1,13 @@
 import styles from './Header.module.css';
 import Navbar from '../Navbar/Navbar';
+import { Link } from 'react-router-dom';
 
 function Header() {
     return (
         <header className={styles.header}>
-            <h1 className={styles.h1}>App de Mary</h1>
+            <Link to="/" className={styles.logo}>
+                App de Mary
+            </Link>
             <Navbar />
         </header>
     )

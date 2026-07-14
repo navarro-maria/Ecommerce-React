@@ -1,0 +1,70 @@
+.gestionContainer {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    margin: 0 auto;
+    gap: 1rem;
+}
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.formulario div {
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+    text-align: left;
+}
+
+.formulario input {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-top: 0.3rem;
+}
+
+.formulario .boton {
+    margin: 0 auto;
+}
+
+.lista {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.boton {
+    padding: 8px 16px;
+    cursor: pointer;
+    text-decoration: none;
+    color: black;
+    border: 1px solid black;
+    background-color: white;
+    font-size: 0.9rem;
+    border-radius: 4px;
+    width: fit-content;
+}
+
+.boton:hover {
+    background-color: #f0f0f0;
+}
+
+.errorMessage{
+    color: #c00;
+    font-size: 0.9rem;
+}

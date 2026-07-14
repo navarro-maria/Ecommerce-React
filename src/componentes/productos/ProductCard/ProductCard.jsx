@@ -2,8 +2,10 @@ import s from './ProductCard.module.css'
 import Contador from '../Contador/Contador'
 import { useState } from 'react'
 import { Link } from 'react-router-dom'
+import { useCart } from '../../../context/CartContext'
 
 export function ProductCard({ id, nombre, precio, stock, imagen }) {
+    const producto = { id, nombre, precio, stock, imagen }
 
     const [esFavorito, setEsFavorito] = useState(false)
     const [cantidad, setCantidad] = useState(0)
@@ -12,27 +14,30 @@ export function ProductCard({ id, nombre, precio, stock, imagen }) {
         setEsFavorito(!esFavorito)
     }
 
+    const { addToCart } = useCart();
+
     const agregarAlCarrito = () => {
         if (cantidad === 0) {
             alert('Por favor, selecciona una cantidad antes de agregar al carrito.')
             return
         }
+        addToCart(producto, cantidad);
         alert(`Agregaste ${cantidad} unidades de ${nombre} al carrito.`)
     }
 
     return (
         <div className={s.contenedor}>
-            <Link to={`/producto/${id}`} className={s.link}>
+            <Link to={`/producto/${producto.id}`} className={s.link}>
                 <img src={imagen} alt={nombre} className={s.imagenCard} />
-
-                <div className={s.info}>
-                    <h3 className={s.nombre}>{nombre}</h3>
-                    <p className={s.stock}>Stock disponible: {stock}</p>
-                    <p className={s.precio}>${precio}</p>
-                </div>
-
             </Link>
 
+            
+            <div className={s.info}>
+                <h3 className={s.nombre}>{nombre}</h3>
+                <p className={s.stock}>Stock disponible: {stock}</p>
+                <p className={s.precio}>${precio}</p>
+            </div>
+            
             <Contador stock={stock} cantidad={cantidad} setCantidad={setCantidad} />
 
             <div>

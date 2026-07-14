@@ -4,25 +4,30 @@
     justify-content: center;
     align-items: center;
     gap: 10px;
-    background-color: #FFFFFF;
-    padding: 16px;
-    border-radius: 16px;
+    background-color: #040a2a;
+    color: #ffffff;
     width: 16rem;
+    border-radius: .5rem;
+    padding-bottom: 1rem;
+    overflow: hidden;
 }
 
 .imagenCard{
-    width: 150px;
-    height: 150px;
-    object-fit: cover;
-    border-radius: 8px;
+    width: 100%;
+    height: 200px;
+    object-fit: contain;
+}
+.link{
+    width: 100%;
+    text-decoration: none;
+    background-color: #ffffff;
+    padding: .5rem;
 }
 
 .info{
     display: flex;
     flex-direction: column;
-    align-items: start;
     gap: .5rem;
-    padding-top: 1.5rem;
 }
 
 .stock{
@@ -32,27 +37,23 @@
 
 .precio{
     font-size: 1.2rem;
-    font-weight: bold;
-    color: #F8361B;
 }
 
-.link{
-    text-decoration: none;
-    color: inherit;
-}
+
 
 /* Boton */
 
 .boton{
-    background-color: #F8361B;
+    background-color: #00b7ff;
     border: none;
     border-radius: 1rem;
     padding: 1rem 2rem;
     color: #ffffff;
+    font-size: .9rem;
 }
 
 .boton:hover{
-    background-color: #D62E16;
+    background-color: #008fc7;
     cursor: pointer;
 }
 

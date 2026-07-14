@@ -1,7 +1,7 @@
 import { ProductCard } from "../ProductCard/ProductCard";
 import s from './ProductList.module.css'
 
-function ProductList({ productos,  }) {
+function ProductList({ productos }) {
     return (
         <div className={s.contenedor}>
             {productos.map(producto => (

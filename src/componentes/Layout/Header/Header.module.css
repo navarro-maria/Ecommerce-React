@@ -1,9 +1,21 @@
-.header{
-    background-color: #F8361B;
-    padding: 20px;
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.header {
+    background-color: #040a2a;
     color: #ffffff;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 1.5rem 3rem;
+}
+
+@media (max-width: 768px) {
+    .header {
+        padding: 1rem 1.5rem;
+    }
 }

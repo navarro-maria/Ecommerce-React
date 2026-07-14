@@ -1,9 +1,9 @@
 .contenedor{
     padding: 1rem;
-    display: flex;
-    flex-direction: column;
     background-color: #FFFFFF;
     border-radius: 1rem;
+    margin: 1rem auto;
+    width: 90%;
 }
 
 .detalle{
@@ -12,7 +12,9 @@
 }
 
 .imagen{
-    width: 20rem;
+    max-width: 20rem;
+    width: 100%;
+    object-fit: contain;
 }
 
 .info{
@@ -32,7 +34,19 @@
 }
 
 .precio{
-    color: #E53935;
+    color: #040a2a;
     font-size: 1.5rem;
     font-weight: bold;
+}
+
+.botonVolver{
+    color: #005a9a;
+}
+
+@media (max-width: 768px) {
+
+    .detalle{
+        flex-direction: column;
+        align-items: center;
+    }
 }

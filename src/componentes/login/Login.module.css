@@ -1,0 +1,23 @@
+.form{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    max-width: 300px;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+.form input{
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.boton{
+    padding: 10px 20px;
+}
+
+.errorMessage{
+    color: #c00;
+    font-size: 0.9rem;
+}

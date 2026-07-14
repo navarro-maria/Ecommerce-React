@@ -1,5 +1,4 @@
 import s from './TeamMemberCard.module.css'
-import { useState } from 'react'
 
 export function TeamMemberCard({ nombre, foto, puesto, email }) {
     return (

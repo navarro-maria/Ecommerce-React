@@ -26,8 +26,9 @@
     font-weight: bold;
 }
 
-.formulario input{
+.formulario input, .formulario textarea{
     padding: .5rem;
+    width: 200px;
 }
 
 .boton{

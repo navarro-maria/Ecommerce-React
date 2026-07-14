@@ -1,0 +1,31 @@
+.authContainer{
+    max-width: 300px;
+    margin: 0 auto;
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    gap: 12px;
+    max-width: 300px;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+.formGroup input{
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-top: 5px;
+}
+
+.boton{
+    padding: 10px 20px;
+}
+
+.errorMessage{
+    color: #c00;
+    font-size: 0.9rem;
+}

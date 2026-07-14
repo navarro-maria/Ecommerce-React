@@ -2,21 +2,25 @@ import { useEffect, useState } from "react";
 import ProductList from "../ProductList/ProductList";
 import s from './ProductListContainer.module.css'
 
+//Firebase
+import { getFirestore, collection, getDocs } from 'firebase/firestore';
+import { db } from "../../../firebase/config";
+
 function ProductListContainer({ Mensaje }) {
     const [productos, setProductos] = useState([]);
     const [error, setError] = useState(null);
     const [cargando, setCargando] = useState(true);
 
     useEffect(() => {
-        fetch('/data/productos.json')
-            .then(respuesta => {
-                if (!respuesta.ok) {
-                    throw new Error("No se pudo cargar la información de los productos");
-                }
-                return respuesta.json();
-            }).then(datos => {
-                setProductos(datos);
-            }).catch(error => {
+        const productosDB = collection(db, "productos nacionales")
+        getDocs(productosDB)
+            .then((resp) => {
+                setProductos(
+                    resp.docs.map((doc) => {
+                        return { ...doc.data(), id: doc.id }
+                    })
+                );
+            }).catch((error) => {
                 setError(error.message);
             }).finally(() => {
                 setCargando(false);
